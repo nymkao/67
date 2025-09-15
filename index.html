@@ -1,66 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ONDO Website</title>
-<script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-black text-white font-sans">
-
-  <!-- Header -->
-  <header class="bg-black h-10 w-full mx-auto container">
-    <div class="flex justify-between items-center">
-     
-      <img src="https://pbs.twimg.com/media/GEeqdmqX0AAq1XF.png:large"
-           alt="logo" class="h-70 w-20"/>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONDO Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white font-sans">
+    <!-- Header -->
+    <header
+      class="bg-black h-10 w-full mx-auto max-w-6xl container flex justify-between items-center"
+    >
+      <img
+        src="https://ondo.finance/images/ondo-wordmark-hero-card.png"
+        alt="logo"
+        class="h-50 w-20"
+      />
 
       <!-- Menu -->
-      <ul class="text-white flex gap-4 text-[10px] font-semibold">
-        <li class="hover:text-pink-400">Мэдээлэл </li>
-        <li class="hover:text-pink-400">Тусламж </li>
-        <li class="hover:text-pink-400">Найзаа урих </li>
-        <li>
-          <button class="bg-pink-400 text-black px-3 p-1 rounded text-[10px] hover:bg-pink-300 ">
+      <div class="text-white flex gap-4 text-[15px] font-semibold">
+        <p class="hover:text-pink-400">Мэдээлэл</p>
+        <p class="hover:text-pink-400">Тусламж</p>
+        <p class="hover:text-pink-400">Найзаа урих</p>
+        <p>
+          <button
+            class="bg-pink-400 text-black px-3 p-1 rounded text-[15px] hover:bg-pink-300"
+          >
             Бүртгэх
           </button>
-        </li>
-      </ul>
-    </div>
-  </header>
+        </p>
+      </div>
+    </header>
 
-
-  
     <div class="flex items-center justify-center gap-4">
       <p class="text-center">Биeт сим хүргэлттэй боллоо. Сим 5000₮</p>
-      <button class="bg-pink-400 text-black px-4 p-1 rounded text-[10px] hover:bg-pink-300 transition">
+      <button
+        class="bg-pink-400 text-black px-4 p-1 rounded text-[15px] hover:bg-pink-300 transition"
+      >
         Захиалах →
       </button>
     </div>
-
-
-
-  
-    <div class="max-w-5xl mx-auto px-4">
-      <img src="https://cdn.ondo.mn/strapi/ONDO_Call_66_minute_01_2_bfdcbcdcd4.png"
-           alt="zurag" class="  mt-4 mx-auto container" />
+    <div class="max-w-6xl mx-auto container mx-auto">
+      <img
+        src="https://cdn.ondo.mn/strapi/ONDO_Call_66_minute_01_2_bfdcbcdcd4.png"
+        alt="zurag"
+        class="mt-4 mx-auto container"
+      />
     </div>
-  <div class=" cursor-pointer max-w-6xl mx-auto px-4">
+    <div class="cursor-pointer max-w-6xl mx-auto">
       <h2 class="text-3xl font-bold text-center mb-10">Үйлчилгээ & Багц</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-       </div>
-    <div class="flex justify-between text-white mx-18 mt-4 ">
-         <button><i class="ri-phone-line">ONDO-д бүртгүүлэх</i></button>
-        <button>Сарын багц авах</button>
-        <button>Дата цэнэглэх</button>
-        <button>Төгрөгөөр цэнэглэх</button>
-        <button>Дугаар авах</button>
-        <button>Сим сэргээх</button>
-        <button>Олон улсын дата</button>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-white container mx-auto max-w-6xl mt-4">
+        <div class="flex flex-col items-center bg-gray-800 p-4 rounded-md">
+          <i class="ri-phone-line text-3xl mb-2"></i>
+          <button class="text-sm font-medium">ONDO-д бүртгүүлэх</button>
+        </div>
 
-        
+        <div class="flex flex-col items-center bg-gray-800 p-4 rounded-md">
+          <i class="ri-arrow-up-line text-3xl mb-2"></i>
+          <button class="text-sm font-medium">Сарын багц авах</button>
+        </div>
+
+        <div class="flex flex-col items-center bg-gray-800 p-4 rounded-md">
+          <i class="ri-arrow-right-down-fill text-3xl mb-2"></i>
+          <button class="text-sm font-medium">Дата цэнэглэх</button>
+        </div>
+
+        <div class="flex flex-col items-center bg-gray-800 p-4 rounded-md">
+          <i class="ri-arrow-right-up-line text-3xl mb-2"></i>
+          <button class="text-sm font-medium">Төгрөгөөр цэнэглэх</button>
+        </div>
+
+        <div class="flex flex-col items-center bg-gray-800 p-4 rounded-md">
+          <i class="ri-arrow-down-circle-line text-3xl mb-2"></i>
+          <button class="text-sm font-medium">Дугаар авах</button>
+        </div>
+
+        <div class="flex flex-col items-center bg-gray-800 p-4 rounded-md">
+          <i class="ri-arrow-up-circle-line text-3xl mb-2"></i>
+          <button class="text-sm font-medium">Сим сэргээх</button>
+        </div>
+
+        <div class="flex flex-col items-center bg-gray-800 p-4 rounded-md">
+          <i class="ri-arrow-up-box-line text-3xl mb-2"></i>
+          <button class="text-sm font-medium">Олон улсын дата</button>
+        </div>
+      </div>
+       <div class="text-white mt-5 rounded justify-center mx-auto flex gap-4">
+ <div>
+    
+    <img class="h-80 w-135 object-cover rounded " src="https://cdn.ondo.mn/strapi/travel_sim_banner_afd3f2d9c9.png"
+     alt="">
+     
+    
+ </div> 
+ <div>
+    <img class="h-80 w-135 object-cover rounded" src="https://cdn.ondo.mn/strapi/0_02_08_046b54e98dd635ce237584890e8d6381fa18feabc5d41509a890782d9a30e5c5_21d1db9da7f_caf066e97e.jpg"
+     alt="">
+ </div>  
     </div>
-      
-    </div>
-</body>
+  </body>
 </html>
+
