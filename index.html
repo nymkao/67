@@ -1,125 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Grid</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 p-6">
 
  
   <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-    
-   <a href="1.html">
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col">
-      <img src="https://tse2.mm.bing.net/th/id/OIP.rJ2-aaGIngraiwfT1ZRNXQHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3" alt="USB " class="rounded-lg mb-3">
-      <h3 class="text-sm font-medium">USB </h3>
-      <div class="mt-2 text-red-600 font-bold">16,450₮ <span class="text-gray-400  text-xs">23,530₮</span></div>
+
+   
+    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col cursor-pointer"
+         onclick="openModal('USB', 'https://tse2.mm.bing.net/th/id/OIP.rJ2-aaGIngraiwfT1ZRNXQHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3', 'High-speed USB drive perfect for storage and transfer. Price: 16,450₮ (was 23,530₮).')">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.rJ2-aaGIngraiwfT1ZRNXQHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3" class="rounded-lg mb-3">
+      <h3 class="text-sm font-medium">USB</h3>
+      <div class="mt-2 text-red-600 font-bold">16,450₮ <span class="text-gray-400 text-xs">23,530₮</span></div>
       <div class="text-gray-500 text-xs">3.7k+ sold</div>
-      <div class="flex items-center text-yellow-400 text-sm"> <span class="ml-1 text-gray-500 text-xs">(138)</span></div>
     </div>
-    </a>
 
- <a href="2.html">
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col">
-      <img src="https://th.bing.com/th/id/OIP.WxMmmx1nm9goaKlHBI2kcgHaGB?w=235&h=190&c=7&r=0&o=7&pid=1.7&rm=3" alt="Knife Sharpener " class="rounded-lg mb-3">
+    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col cursor-pointer"
+         onclick="openModal('Knife Sharpener', 'https://th.bing.com/th/id/OIP.WxMmmx1nm9goaKlHBI2kcgHaGB?w=235&h=190&c=7&r=0&o=7&pid=1.7&rm=3', 'Professional Knife Sharpener with adjustable angles for any blade. Price: 7,660₮ (was 69,600₮).')">
+      <img src="https://th.bing.com/th/id/OIP.WxMmmx1nm9goaKlHBI2kcgHaGB?w=235&h=190&c=7&r=0&o=7&pid=1.7&rm=3" class="rounded-lg mb-3">
       <h3 class="text-sm font-medium">Knife Sharpener</h3>
-      <div class="mt-2 text-red-600 font-bold">7,660₮ <span class="text-gray-400  text-xs">69,600₮</span></div>
+      <div class="mt-2 text-red-600 font-bold">7,660₮ <span class="text-gray-400 text-xs">69,600₮</span></div>
       <div class="text-gray-500 text-xs">100k+ sold</div>
-      <div class="flex items-center text-yellow-400 text-sm"> <span class="ml-1 text-gray-500 text-xs">(44,433)</span></div>
-    </div>
-</a>
-
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col">
-      <img src="https://th.bing.com/th/id/OIP.jp6QkgUiGJ_YdQ2BTY6qBgHaI4?w=155&h=185&c=7&r=0&o=7&pid=1.7&rm=3" alt="Shower Head" class="rounded-lg mb-3">
-      <h3 class="text-sm font-medium">Shower Head</h3>
-      <div class="mt-2 text-red-600 font-bold">10,760₮ <span class="text-gray-400  text-xs">50,280₮</span></div>
-      <div class="text-gray-500 text-xs">100k+ sold</div>
-      <div class="flex items-center text-yellow-400 text-sm"> <span class="ml-1 text-gray-500 text-xs">(11,342)</span></div>
-    </div>
-
- 
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col">
-      <img src="https://th.bing.com/th/id/OIP.Rr8hJLwyhp0pEpeoKns6gwHaKF?w=199&h=271&c=7&r=0&o=7&pid=1.7&rm=3" alt=" Belt" class="rounded-lg mb-3">
-      <h3 class="text-sm font-medium"> Belt</h3>
-      <div class="mt-2 text-red-600 font-bold">10,040₮ <span class="text-gray-400  text-xs">15,500₮</span></div>
-      <div class="text-gray-500 text-xs">2k+ sold</div>
-      <div class="flex items-center text-yellow-400 text-sm"> <span class="ml-1 text-gray-500 text-xs">(101)</span></div>
-    </div>
-
- 
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col">
-      <img src="https://tse3.mm.bing.net/th/id/OIP.3_x4LDb1pMk9bRfVPY5tJwHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Dumpling Box" class="rounded-lg mb-3">
-      <h3 class="text-sm font-medium"> Dumpling Box</h3>
-      <div class="mt-2 text-red-600 font-bold">28,850₮ <span class="text-gray-400  text-xs">46,720₮</span></div>
-      <div class="text-gray-500 text-xs">1.9k+ sold</div>
-      <div class="flex items-center text-yellow-400 text-sm"> <span class="ml-1 text-gray-500 text-xs">(147)</span></div>
-    </div>
-
-    
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col">
-      <img src="https://th.bing.com/th/id/OIP.8ZZej7g_xmt8c_-XcY2O7QHaCp?w=317&h=125&c=7&r=0&o=7&pid=1.7&rm=3" alt="Brush Heads" class="rounded-lg mb-">
-      <h3 class="text-sm font-medium">Oral B Brush Heads (16 Pack)</h3>
-      <div class="mt-2 text-red-600 font-bold">18,040₮ <span class="text-gray-400 text-xs">61,370₮</span></div>
-      <div class="text-gray-500 text-xs">100k+ sold</div>
-      <div class="flex items-center text-yellow-400 text-sm"> <span class="ml-1 text-gray-500 text-xs">(7,291)</span></div>
-    </div>
-
-
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col">
-      <img src="https://th.bing.com/th/id/OIP.kRdQc1YGWWYYLF9lzHnSrAHaHa?w=178&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Headlight Restorer" class="rounded-lg mb-3">
-      <h3 class="text-sm font-medium">Headlight Restorer</h3>
-      <div class="mt-2 text-red-600 font-bold">10,640₮ <span class="text-gray-400  text-xs">13,610₮</span></div>
-      <div class="text-gray-500 text-xs">80k+ sold</div>
-      <div class="flex items-center text-yellow-400 text-sm"> <span class="ml-1 text-gray-500 text-xs">(5,221)</span></div>
-    </div>
-
-    
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col">
-      <img src="https://th.bing.com/th/id/OIP.T33iWD3_AaIW9LY8yw0UkQHaHa?w=207&h=207&c=7&r=0&o=7&pid=1.7&rm=3" alt="Golf Trainer" class="rounded-lg mb-3">
-      <h3 class="text-sm font-medium">Golf Swing Trainer</h3>
-      <div class="mt-2 text-red-600 font-bold">6,370₮ <span class="text-gray-400  text-xs">28,600₮</span></div>
-      <div class="text-gray-500 text-xs">82k+ sold</div>
-      <div class="flex items-center text-yellow-400 text-sm"> <span class="ml-1 text-gray-500 text-xs">(2,106)</span></div>
-    </div>
-
-
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col">
-      <img src="https://th.bing.com/th/id/OIP.08sqecWTi7az4tHpI3lxJgHaHa?w=192&h=191&c=7&r=0&o=7&pid=1.7&rm=3" alt="Absorbent Mat" class="rounded-lg mb-3">
-      <h3 class="text-sm font-medium">Quick Dry Absorbent Mat</h3>
-      <div class="mt-2 text-red-600 font-bold">12,430₮ <span class="text-gray-400  text-xs">15,900₮</span></div>
-      <div class="text-gray-500 text-xs">100k+ sold</div>
-      <div class="flex items-center text-yellow-400 text-sm"> <span class="ml-1 text-gray-500 text-xs">(11,167)</span></div>
     </div>
 
    
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col">
-      <img src="https://th.bing.com/th/id/OIP.DnE-W9Ai_S9nursIxGa0ZwAAAA?w=199&h=265&c=7&r=0&o=7&pid=1.7&rm=3" alt="Winter Set" class="rounded-lg mb-3">
-      <h3 class="text-sm font-medium">Thermal Winter Set (3pcs)</h3>
-      <div class="mt-2 text-red-600 font-bold">17,830₮ <span class="text-gray-400  text-xs">26,090₮</span></div>
-      <div class="text-gray-500 text-xs">5.3k+ sold</div>
-      <div class="flex items-center text-yellow-400 text-sm"> <span class="ml-1 text-gray-500 text-xs">(347)</span></div>
+    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col cursor-pointer"
+         onclick="openModal('Shower Head', 'https://th.bing.com/th/id/OIP.jp6QkgUiGJ_YdQ2BTY6qBgHaI4?w=155&h=185&c=7&r=0&o=7&pid=1.7&rm=3', 'High-pressure shower head for better water flow and comfort. Price: 10,760₮ (was 50,280₮).')">
+      <img src="https://th.bing.com/th/id/OIP.jp6QkgUiGJ_YdQ2BTY6qBgHaI4?w=155&h=185&c=7&r=0&o=7&pid=1.7&rm=3" class="rounded-lg mb-3">
+      <h3 class="text-sm font-medium">Shower Head</h3>
+      <div class="mt-2 text-red-600 font-bold">10,760₮ <span class="text-gray-400 text-xs">50,280₮</span></div>
+      <div class="text-gray-500 text-xs">100k+ sold</div>
     </div>
 
- 
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col">
-      <img src="https://th.bing.com/th/id/OIP.r2dh4JKFXLylTHBxzPkjrwHaHa?w=189&h=189&c=7&r=0&o=7&pid=1.7&rm=3" alt="Massage Mat" class="rounded-lg mb-3">
-      <h3 class="text-sm font-medium">Acupressure Massage Mat</h3>
-      <div class="mt-2 text-red-600 font-bold">22,500₮ <span class="text-gray-400 text-xs">40,000₮</span></div>
-      <div class="text-gray-500 text-xs">12k+ sold</div>
-      <div class="flex items-center text-yellow-400 text-sm"> <span class="ml-1 text-gray-500 text-xs">(512)</span></div>
+
+    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col cursor-pointer"
+         onclick="openModal('Belt', 'https://th.bing.com/th/id/OIP.Rr8hJLwyhp0pEpeoKns6gwHaKF?w=199&h=271&c=7&r=0&o=7&pid=1.7&rm=3', 'Classic leather belt, durable and stylish. Price: 10,040₮ (was 15,500₮).')">
+      <img src="https://th.bing.com/th/id/OIP.Rr8hJLwyhp0pEpeoKns6gwHaKF?w=199&h=271&c=7&r=0&o=7&pid=1.7&rm=3" class="rounded-lg mb-3">
+      <h3 class="text-sm font-medium">Belt</h3>
+      <div class="mt-2 text-red-600 font-bold">10,040₮ <span class="text-gray-400 text-xs">15,500₮</span></div>
+      <div class="text-gray-500 text-xs">2k+ sold</div>
     </div>
 
     
-    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col">
-      <img src="https://th.bing.com/th/id/OIP.S8ktmXPMwq3qlSMRJ5OXOgHaHa?w=188&h=188&c=7&r=0&o=7&pid=1.7&rm=3" alt="Heated Socks" class="rounded-lg mb-3">
+    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col cursor-pointer"
+         onclick="openModal('Dumpling Box', 'https://tse3.mm.bing.net/th/id/OIP.3_x4LDb1pMk9bRfVPY5tJwHaE7?rs=1&pid=ImgDetMain&o=7&rm=3', 'Make perfect dumplings easily at home. Price: 28,850₮ (was 46,720₮).')">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.3_x4LDb1pMk9bRfVPY5tJwHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" class="rounded-lg mb-3">
+      <h3 class="text-sm font-medium">Dumpling Box</h3>
+      <div class="mt-2 text-red-600 font-bold">28,850₮ <span class="text-gray-400 text-xs">46,720₮</span></div>
+      <div class="text-gray-500 text-xs">1.9k+ sold</div>
+    </div>
+
+  
+    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col cursor-pointer"
+         onclick="openModal('Oral B Brush Heads (16 Pack)', 'https://th.bing.com/th/id/OIP.8ZZej7g_xmt8c_-XcY2O7QHaCp?w=317&h=125&c=7&r=0&o=7&pid=1.7&rm=3', 'Replacement Oral B Brush Heads (16 pcs) for deep clean. Price: 18,040₮ (was 61,370₮).')">
+      <img src="https://th.bing.com/th/id/OIP.8ZZej7g_xmt8c_-XcY2O7QHaCp?w=317&h=125&c=7&r=0&o=7&pid=1.7&rm=3" class="rounded-lg mb-3">
+      <h3 class="text-sm font-medium">Oral B Brush Heads (16 Pack)</h3>
+      <div class="mt-2 text-red-600 font-bold">18,040₮ <span class="text-gray-400 text-xs">61,370₮</span></div>
+      <div class="text-gray-500 text-xs">100k+ sold</div>
+    </div>
+
+   
+    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col cursor-pointer"
+         onclick="openModal('Headlight Restorer', 'https://th.bing.com/th/id/OIP.kRdQc1YGWWYYLF9lzHnSrAHaHa?w=178&h=180&c=7&r=0&o=7&pid=1.7&rm=3', 'Restore clarity to foggy headlights easily. Price: 10,640₮ (was 13,610₮).')">
+      <img src="https://th.bing.com/th/id/OIP.kRdQc1YGWWYYLF9lzHnSrAHaHa?w=178&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="rounded-lg mb-3">
+      <h3 class="text-sm font-medium">Headlight Restorer</h3>
+      <div class="mt-2 text-red-600 font-bold">10,640₮ <span class="text-gray-400 text-xs">13,610₮</span></div>
+      <div class="text-gray-500 text-xs">80k+ sold</div>
+    </div>
+
+ 
+    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col cursor-pointer"
+         onclick="openModal('Golf Swing Trainer', 'https://th.bing.com/th/id/OIP.T33iWD3_AaIW9LY8yw0UkQHaHa?w=207&h=207&c=7&r=0&o=7&pid=1.7&rm=3', 'Improve your swing accuracy and consistency. Price: 6,370₮ (was 28,600₮).')">
+      <img src="https://th.bing.com/th/id/OIP.T33iWD3_AaIW9LY8yw0UkQHaHa?w=207&h=207&c=7&r=0&o=7&pid=1.7&rm=3" class="rounded-lg mb-3">
+      <h3 class="text-sm font-medium">Golf Swing Trainer</h3>
+      <div class="mt-2 text-red-600 font-bold">6,370₮ <span class="text-gray-400 text-xs">28,600₮</span></div>
+      <div class="text-gray-500 text-xs">82k+ sold</div>
+    </div>
+
+  
+    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col cursor-pointer"
+         onclick="openModal('Quick Dry Absorbent Mat', 'https://th.bing.com/th/id/OIP.08sqecWTi7az4tHpI3lxJgHaHa?w=192&h=191&c=7&r=0&o=7&pid=1.7&rm=3', 'Soft, fast-drying absorbent mat for bathrooms or kitchens. Price: 12,430₮ (was 15,900₮).')">
+      <img src="https://th.bing.com/th/id/OIP.08sqecWTi7az4tHpI3lxJgHaHa?w=192&h=191&c=7&r=0&o=7&pid=1.7&rm=3" class="rounded-lg mb-3">
+      <h3 class="text-sm font-medium">Quick Dry Absorbent Mat</h3>
+      <div class="mt-2 text-red-600 font-bold">12,430₮ <span class="text-gray-400 text-xs">15,900₮</span></div>
+      <div class="text-gray-500 text-xs">100k+ sold</div>
+    </div>
+
+ 
+    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col cursor-pointer"
+         onclick="openModal('Thermal Winter Set (3pcs)', 'https://th.bing.com/th/id/OIP.DnE-W9Ai_S9nursIxGa0ZwAAAA?w=199&h=265&c=7&r=0&o=7&pid=1.7&rm=3', 'Stay warm with this 3-piece winter thermal set. Price: 17,830₮ (was 26,090₮).')">
+      <img src="https://th.bing.com/th/id/OIP.DnE-W9Ai_S9nursIxGa0ZwAAAA?w=199&h=265&c=7&r=0&o=7&pid=1.7&rm=3" class="rounded-lg mb-3">
+      <h3 class="text-sm font-medium">Thermal Winter Set (3pcs)</h3>
+      <div class="mt-2 text-red-600 font-bold">17,830₮ <span class="text-gray-400 text-xs">26,090₮</span></div>
+      <div class="text-gray-500 text-xs">5.3k+ sold</div>
+    </div>
+
+  
+    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col cursor-pointer"
+         onclick="openModal('Acupressure Massage Mat', 'https://th.bing.com/th/id/OIP.r2dh4JKFXLylTHBxzPkjrwHaHa?w=189&h=189&c=7&r=0&o=7&pid=1.7&rm=3', 'Relax your body with this acupressure massage mat. Price: 22,500₮ (was 40,000₮).')">
+      <img src="https://th.bing.com/th/id/OIP.r2dh4JKFXLylTHBxzPkjrwHaHa?w=189&h=189&c=7&r=0&o=7&pid=1.7&rm=3" class="rounded-lg mb-3">
+      <h3 class="text-sm font-medium">Acupressure Massage Mat</h3>
+      <div class="mt-2 text-red-600 font-bold">22,500₮ <span class="text-gray-400 text-xs">40,000₮</span></div>
+      <div class="text-gray-500 text-xs">12k+ sold</div>
+    </div>
+
+   
+    <div class="bg-white rounded-2xl shadow hover:shadow-lg transition p-3 flex flex-col cursor-pointer"
+         onclick="openModal('Rechargeable Heated Socks', 'https://th.bing.com/th/id/OIP.S8ktmXPMwq3qlSMRJ5OXOgHaHa?w=188&h=188&c=7&r=0&o=7&pid=1.7&rm=3', 'Keep your feet warm with rechargeable heated socks. Price: 19,990₮ (was 32,000₮).')">
+      <img src="https://th.bing.com/th/id/OIP.S8ktmXPMwq3qlSMRJ5OXOgHaHa?w=188&h=188&c=7&r=0&o=7&pid=1.7&rm=3" class="rounded-lg mb-3">
       <h3 class="text-sm font-medium">Rechargeable Heated Socks</h3>
-      <div class="mt-2 text-red-600 font-bold">19,990₮ <span class="text-gray-400  text-xs">32,000₮</span></div>
+      <div class="mt-2 text-red-600 font-bold">19,990₮ <span class="text-gray-400 text-xs">32,000₮</span></div>
       <div class="text-gray-500 text-xs">8k+ sold</div>
-      <div class="flex items-center text-yellow-400 text-sm"> <span class="ml-1 text-gray-500 text-xs">(289)</span></div>  
     </div>
 
   </div>
+
+ 
+  <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-2xl shadow-2xl p-6 w-11/12 max-w-md relative">
+    
+      <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+      
+      <div class="w-full aspect-[4/3] overflow-hidden rounded-xl mb-4">
+        <img id="modalImage" src="" alt="Product" class="w-full h-full object-contain">
+      </div>
+      
+    
+      <h2 id="modalTitle" class="text-xl font-semibold mb-2 text-gray-800"></h2>
+      <p id="modalDescription" class="text-gray-600 mb-5 leading-relaxed"></p>
+
+    
+      <div class="flex justify-end space-x-3">
+        <button onclick="closeModal()" class="bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300 transition">Close</button>
+        <button class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function openModal(title, image, description) {
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalImage').src = image;
+      document.getElementById('modalDescription').textContent = description;
+      document.getElementById('productModal').classList.remove('hidden');
+      document.getElementById('productModal').classList.add('flex');
+    }
+
+    function closeModal() {
+      document.getElementById('productModal').classList.add('hidden');
+      document.getElementById('productModal').classList.remove('flex');
+    }
+
+    window.addEventListener('click', function(e) {
+      const modal = document.getElementById('productModal');
+      if (e.target === modal) closeModal();
+    });
+  </script>
+
 </body>
 </html>
+
